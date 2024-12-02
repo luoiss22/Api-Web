@@ -1,0 +1,62 @@
+/* Estilos generales para la barra de navegación */
+.navbar {
+    background-color: #333;
+    padding: 10px 20px;
+  }
+  
+  .nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .nav-item {
+    position: relative;
+    margin-right: 20px;
+  }
+  
+  .nav-item > a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    background-color: #575757; /* Fondo oscuro permanente */
+    border-radius: 5px; /* Borde redondeado permanente */
+  }
+  
+  .nav-item > a:hover {
+    background-color: #444; /* Color de fondo al pasar el mouse */
+  }
+  
+  .sub-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: #444;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+  }
+  
+  .sub-menu li {
+    padding: 10px 15px;
+  }
+  
+  .sub-menu li a {
+    color: #fff;
+    text-decoration: none;
+    background-color: #575757; /* Fondo oscuro permanente */
+    border-radius: 5px; /* Borde redondeado permanente */
+  }
+  
+  .sub-menu li a:hover {
+    background-color: #444; /* Color de fondo al pasar el mouse */
+  }
+  
+  .nav-item:hover .sub-menu {
+    display: block;
+  }
